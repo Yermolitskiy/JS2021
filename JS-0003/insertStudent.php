@@ -12,7 +12,7 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully";
+  echo "Connected successfully... ";
 
 // Taking all 4 values from the form data(input)
 $name = $_REQUEST['name'];
@@ -33,11 +33,11 @@ $sql = "INSERT INTO student VALUES (DEFAULT, '$name','$surname','$gender',$age, 
 // $conn->close();
 // header('Location: ' . $_SERVER['HTTP_REFERER']);
 if ($conn->query($sql) === TRUE) {
-  echo "record inserted successfully";
+    echo "record inserted successfully... ";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
         //Close connection
         mysqli_close($conn);
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
- ?>
+        // header('Location: ' . $_SERVER['HTTP_REFERER']);
+?>
