@@ -80,9 +80,80 @@ $conn->close();
           <label="Age">Age:</label>
           <input type="text" name="age" id="Address">
         </p>
+        <p>
+          <label="Distinct">Distinct:</label>
+          <input name='distinct' type='checkbox' value='0' />
+        </p>
         <input type="submit" value="Submit">
 
       </form>
+    </center>
+    <center>
+        <h1>Register new lector</h1>
+        <form action="insertLector.php" method="post">
+            <p>
+                <label="Name">Name:</label>
+                <input type="text" name ="lec_name" id="lec_firstName">
+            </p>
+
+            <p>
+                <label="Name">Surname:</label>
+                <input type="text" name ="lec_surname" id="lec_lastName">
+            </p>
+
+            <p>
+                <label="Name">Phone:</label>
+                <input type="text" name ="lec_phone" id="lec_phone">
+            </p>
+
+            <p>
+                <label="Name">Mail:</label>
+                <input type="text" name ="lec_mail" id="lec_mail">
+            </p>
+
+            <p>
+                <label="Name">Gender:</label>
+                <input type="text" name ="lec_gender" id="lec_gender">
+            </p>
+            <input type = "submit" value="Submit">
+
+        </form>
+        <center>
+        <h1>Register new rector</h1>
+        <form action="insertRector.php" method="post">
+            <p>
+                <label="Name">Name:</label>
+                <input type="text" name ="rec_name" id="rec_firstName">
+            </p>
+
+            <p>
+                <label="Name">Surname:</label>
+                <input type="text" name ="rec_surname" id="rec_lastName">
+            </p>
+
+            <p>
+                <label="Name">Age:</label>
+                <input type="text" name ="rec_age" id="rec_age">
+            </p>
+
+            <p>
+                <label="Name">Gender:</label>
+                <input type="text" name ="rec_gender" id="rec_gender">
+            </p>
+
+            <p>
+                <label="Name">Telephone:</label>
+                <input type="text" name ="rec_telephone" id="rec_telephone">
+            </p>
+
+            <p>
+                <label="Name">Mail:</label>
+                <input type="text" name ="rec_mail" id="rec_mail">
+            </p>
+
+            <input type = "submit" value="Submit">
+
+        </form>
     </center>
     <!-- <script type="text/javascript">
       var x = document.cookie;
