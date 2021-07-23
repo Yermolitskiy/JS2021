@@ -1,6 +1,6 @@
 
 
-document.getElementById('submitForm').addEventListener('click' , validateFields);
+document.getElementById('submitForm').addEventListener('click' , validateFields)
 const deleteBtn = document.getElementById('deleteStudent') || 'none'
 const inputArr = document.getElementsByTagName('input')
 

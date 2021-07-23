@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Exam</title>
+</head>
+<body onload="seedQuestions()">
+    
+    
+    <h1 style="display: flex;justify-content: center;">Exam time</h1>
+    <div class="container">
+        <div>
+            <form>
+                <h4>Student personal code</h4>
+                <input type='text' name='personalCode' id='personalCode'>
+            <div class="infoToast" id="info"></div>
+            <div id="resultBox"></div>
+            <!-- questions are generated from js script -->
+            <div>
+                <div id="questions"></div>
+            </div>
+            <!-- questions are generated from js script -->
+            <br/>
+            <button class="submit-btn" type="button" id="submitBtn" onclick="CalculateQuestions()" value="Submit and calc correct">Submit</button>
+            
+            <a href="../index.html" class="submit-btn">Home</a>
+            </form>    
+        </div>
+    </div>
+
+
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../scripts/exam.js" type="text/javascript"></script>
+</html>

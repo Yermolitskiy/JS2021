@@ -12,7 +12,7 @@
     <title>Update and Delete Student</title>
 </head>
 <body>
-    <div class="container">
+    <div class="update_delete_container">
     
         <div class="form form_1">
             <h1>Update student data</h1>
@@ -82,7 +82,7 @@
             }
         unset($_SESSION['Error']);
     ?>
-    
+
    <div id="err-msg"></div>
 
     <a class="btn" style="margin-top:15px;" href="../index.html">back</a>
