@@ -42,7 +42,7 @@
                     </li>
                 </ul>
                 <div class="btn-form">
-                    <button type="submit" value="submit">Submit</button>
+                    <button type="submit"  id="submitForm" value="submit">Submit</button>
                 </div>
                 <?php 
                     if(isset($_SESSION['updateMessage'])){
@@ -51,6 +51,7 @@
                     unset($_SESSION['updateMessage']);
                 ?>
             </form>
+            
     
         </div>
         <div class="form form_2">
@@ -58,7 +59,7 @@
             <form action="../php/deleteStudent.php" method="POST" >
                 <p>
                     <label="Personal_code">Student Personal Code:</label>
-                    <input type="text" name="personalCode" id="personalCode">
+                    <input type="text" name="personalCode" id="personalCodeDelete">
                 </p>
 
                 <?php 
@@ -69,7 +70,7 @@
                 ?>
               
                
-                <button type="submit" value="submit">Submit</button>
+                <button type="submit" id="deleteStudent" value="submit">Submit</button>
             </form>
     
         </div>
@@ -81,7 +82,8 @@
             }
         unset($_SESSION['Error']);
     ?>
-   
+    
+   <div id="err-msg"></div>
 
     <a class="btn" style="margin-top:15px;" href="../index.html">back</a>
 

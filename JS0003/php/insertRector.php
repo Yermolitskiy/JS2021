@@ -22,7 +22,7 @@ $age = $_REQUEST['age'];
 $phone = $_REQUEST['phone'];
 $mail = $_REQUEST['mail'];
 
-$sql_query = "INSERT INTO student VALUES (DEFAULT , '$name' , '$surname' , '$age' , '$gender' , '$phone' , '$mail')";
+$sql_query = "INSERT INTO rector VALUES (DEFAULT , '$name' , '$surname' , '$age' , '$gender' , '$phone' , '$mail')";
 
 if($connection->query($sql_query) === TRUE){
     echo "record inserted successfully";

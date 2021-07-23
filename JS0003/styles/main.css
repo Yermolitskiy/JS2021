@@ -44,6 +44,21 @@
   font-size: 15px;
 
 }
+#err-msg{
+    padding: 5 20px;
+    height: 80px;
+    margin-top: 20px;
+    width: 200px;
+    outline: none;
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: rgb(151, 64, 64);
+    font-size: 15px;
+}
 
 .text-primary{
     color:green;
