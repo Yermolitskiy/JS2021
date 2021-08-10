@@ -1,0 +1,76 @@
+VUE.js:
+
+Progressive framework, non monolithic
+additional layer for html
+core library is focused on the view layer only
+capable of powering Single-page Applications
+Declarative rendering
+Attribute binding
+
+Instance Properties:
+
+data = properties defined in "data" are exposed to template via the component Instance
+methods = properties defined
+props (properties) = list/component
+computed Properties
+watch = used for listening for changes of the data model
+
+Virtual DOM / Shadow DOM
+
+from array -> virtual dom -> browser
+
+Vue and React are using VD (virtual dom)
+
+Livecycle Hooks:
+
+created generated
+mounted placed
+updated happening in a loop
+unmounted final hook when component is taken out from the dome, (to/from garbage collector)
+And others
+https://v3.vue
+
+Syntax:
+
+Most basic - "mustache" syntax:
+<span>{}</span>
+used for dynamic values to display
+For binding dynamic value to use in logic use attribute binding:
+<button v-bind:disabled="isDisabled">Submit</button>     // variable is an actual js variable
+Can use simple string together with dynamic value:
+<span v-bind:id="'item-'+id">item id: {{id}}</span>
+Many move v-directives, like v-if
+Also DOM events
+
+
+###::::
+
+install: npm i -g @vue/cli
+Just in case if someone came across the permission problem, during the Mac installation, here's the solution:
+
+
+1.check the owner:
+
+ls -la /usr/local/lib/node_modules
+
+is it defined, that it's owned by root, eg.:
+drwxr-xr-x   3 root    wheel  102 Jun 24 23:24 node_modules
+
+2.check who'is the user (at the moment)
+id -un
+OR 
+whoami
+(one or another)
+
+if the current user is you, change owner:
+
+/* sudo chown -R [owner]:[owner] /usr/local/lib/node_modules
+ * OR
+ * sudo chown -R ownerName: /usr/local/lib/node_modules
+ * OR
+ */
+sudo chown -R $USER /usr/local/lib/node_modules
+
+
+if method call it exclusively as a methods
+if computed, call  it as a variable

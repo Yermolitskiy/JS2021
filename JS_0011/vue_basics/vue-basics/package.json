@@ -1,0 +1,15 @@
+{
+  "name": "vue-basics",
+  "version": "1.0.0",
+  "description": "1. Install Vue CLI globally, run `npm i -g @vue/cli` 2. Check with `vue --version` 3. For instant prototyping also install global service, run `npm i -g @vue/cli-service-global`",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "vue": "vue",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

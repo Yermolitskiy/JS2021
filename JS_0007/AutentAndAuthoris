@@ -1,0 +1,38 @@
+npm init  -y means it means that we installing and answering yes at the same time
+when the installation is done, please make sure that in package.json file, there are no commas ","  after the last item at "dependencies", otherwise you will get an error
+npm install can be written as npm i
+npm i bcrypt nodemon express
+
+option save is for devDependencies
+we need dev dependencies, we don't need a nodomon included in the bundle that will be shipped through the browser
+npm i --save-dev nodemon
+
+Hashing algo is not the best, as hashes for similar products are the same.
+therefore we need salt
+
+const salt = await bcrypt.genSalt()
+
+npm i dotenv jsonwebtoken
+
+
+2 separate folders with a code from a lection, 1st and 2nd part. go through each page, and record direction and a path with a logic.
+
+
+in Terminal:NODE
+
+require('crypto').randomBytes(64).toString('hex')
+
+for a REFRESH_TOKEN_SECRET in ENV you just run the same command in terminal again and copy/paste.
+
+24 min second video
+
+on our authServer.js we have a different port as 4000
+and also we are modifying package.json and adding a script there :  "authStart"
+
+
+npm init - creates json dependencies file (initialization)
+npm install express --save - install express library
+npm install ejs --save  - templating engine  (no need import)
+npm install - goes through json dependencies and install them
+npm install body-parser --save
+npm install mysql - Install the mysql module

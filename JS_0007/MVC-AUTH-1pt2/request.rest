@@ -1,0 +1,41 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlsbCIsImlhdCI6MTYyODQ0NTQyMywiZXhwIjoxNjI4NDQ1NzIzfQ.z8xILQLFJKoBxUPH7yMR0_O2tyx5dFFpR-Xn2cbEkJw
+// then we are getting this post from the user 
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Otherguy",
+    "password": "other"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlsbCIsImlhdCI6MTYyODQ0NTQyM30.zx_puybe70slIqrrneWL80bTfOJYeU8UU94NKB_LoUk"
+
+}
+
+###
+// sent the login request, that had the access token
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Bill" 
+
+}
+
+###
+
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+{
+    "token": ""
+}
+
+###
